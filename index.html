@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./node_modules/material-design-lite/material.min.css">
     <script src="./node_modules/material-design-lite/material.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <link href="style.css" type="text/css" rel="stylesheet">
@@ -41,13 +42,9 @@
         <!-- Navigation -->
         <div class="android-navigation-container">
           <nav class="android-navigation mdl-navigation">
-            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Phones</a>
-            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Tablets</a>
-            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Wear</a>
-            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">TV</a>
-            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Auto</a>
-            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">One</a>
-            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Play</a>
+            <a class="mdl-navigation__link mdl-typography--text-uppercase aktuell" href="">Aktuelle Angebote</a>
+            <a class="mdl-navigation__link mdl-typography--text-uppercase live-karte" href="">Live-Karte</a>
+            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Leistungen</a>
           </nav>
         </div>
         <span class="android-mobile-title mdl-layout-title">
@@ -57,10 +54,9 @@
           <i class="material-icons">more_vert</i>
         </button>
         <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-          <li class="mdl-menu__item">5.0 Lollipop</li>
-          <li class="mdl-menu__item">4.4 KitKat</li>
-          <li disabled class="mdl-menu__item">4.3 Jelly Bean</li>
-          <li class="mdl-menu__item">Android History</li>
+          <li class="mdl-menu__item">Über uns </li>
+          <li class="mdl-menu__item">Kontakt</li>
+          <li class="mdl-menu__item">Team</li>
         </ul>
       </div>
     </div>
@@ -99,11 +95,9 @@
     <div class="android-content mdl-layout__content">
       <a name="top"></a>
       <div class="android-be-together-section mdl-typography--text-center">
-        <div class="logo-font android-slogan">be together. not the same.</div>
-        <div class="logo-font android-sub-slogan">welcome to android... be yourself. do your thing. see what's going on.</div>
-        <div class="logo-font android-create-character">
-          <a href=""><img src="images/andy.png"> create your android character</a>
-        </div>
+        <div class="logo-font android-slogan">Wohnen statt suchen</div>
+        <div class="logo-font android-sub-slogan">Der erste Eindruck zählt! Finde deine Traumwohnung ganz einfach von zuhause aus.</div>
+
 
         <a href="#screens">
           <button onClick="scrollToVideo()" class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
@@ -117,16 +111,18 @@
           </div>
       </div>
       <div class="android-wear-section">
+        <div id="map"class="map mdl-cell mdl-cell--12-col" style="margin: 0px; height: 800px">
+
+        </div>
         <div class="android-wear-band">
           <div class="android-wear-band-text">
             <div class="mdl-typography--display-2 mdl-typography--font-thin">Starten Sie Ihre virtuelle Besichtigung</div>
             <p class="mdl-typography--headline mdl-typography--font-thin">
-              Android works perfectly with your favourite apps like Google Maps,
-              Calendar and YouTube.
+              Mit einem Click einen Schritt zur neuen Wohnung.
             </p>
             <p>
               <a class="mdl-typography--font-regular mdl-typography--text-uppercase android-alt-link" href="">
-                See what's new in the Play Store&nbsp;<i class="material-icons">chevron_right</i>
+                Sehen Sie wie genau dies Funktioniert<i class="material-icons">chevron_right</i>
               </a>
             </p>
           </div>
@@ -134,11 +130,12 @@
       </div>
       <div class="android-customized-section">
         <div class="android-customized-section-text">
-          <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Customised by you, for you</div>
+          <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Wie wir Ihnen weiterhelfen können</div>
           <p class="mdl-typography--font-light">
-            Put the stuff that you care about right on your home screen: the latest news, the weather or a stream of your recent photos.
+            Sie suchen eine Wohnung zur Miete oder zum Kauf? Sie möchten nicht zu hunderten von Wohnungen fahren bevor Sie etwas passendes gefunden haben?
+            Wir können Ihnen weiterhelfen
             <br>
-            <a href="" class="android-link mdl-typography--font-light">Customise your phone</a>
+            <a href="" class="android-link mdl-typography--font-light">+49 421 88 44 77 9</a>
           </p>
         </div>
         <div class="android-customized-section-image"></div>

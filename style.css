@@ -14,6 +14,77 @@
  * limitations under the License.
  */
 
+ #holder {
+height: 5px;
+width: 5px;
+position: absolute;
+
+background: transparent;
+}
+.pulse {
+    border: 5px solid #d5012d;
+    background: transparent;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    -webkit-animation: pulse 1s ease-out;
+    -moz-animation: pulse 1s ease-out;
+    animation: pulse 1s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+}
+@-moz-keyframes pulse {
+ 0% {
+    -moz-transform: scale(0);
+    opacity: 0.0;
+ }
+ 25% {
+    -moz-transform: scale(0);
+    opacity: 0.1;
+ }
+ 50% {
+    -moz-transform: scale(0.1);
+    opacity: 0.3;
+ }
+ 75% {
+    -moz-transform: scale(0.5);
+    opacity: 0.5;
+ }
+ 100% {
+    -moz-transform: scale(1);
+    opacity: 0.0;
+ }
+}
+@-webkit-keyframes pulse {
+ 0% {
+    -webkit-transform: scale(0);
+    opacity: 0.0;
+ }
+ 25% {
+    -webkit-transform: scale(0);
+    opacity: 0.1;
+ }
+ 50% {
+    -webkit-transform: scale(0.1);
+    opacity: 0.3;
+ }
+ 75% {
+    -webkit-transform: scale(0.5);
+    opacity: 0.5;
+ }
+ 100% {
+    -webkit-transform: scale(1);
+    opacity: 0.0;
+ }
+}
+
+
 body {
   margin: 0;
 }
@@ -24,12 +95,12 @@ a img{
 }
 
 ::-moz-selection {
-  background-color: #6ab344;
+  background-color: #d5012c;
   color: #fff;
 }
 
 ::selection {
-  background-color: #6ab344;
+  background-color: #d5012c;
   color: #fff;
 }
 
@@ -52,7 +123,7 @@ a img{
   right: 20%;
   bottom: -26px;
   z-index: 3;
-  background: #64ffda !important;
+  background: #d5012c !important;
   color: black !important;
 }
 
@@ -122,7 +193,7 @@ a img{
   }
 
     .android-navigation .mdl-navigation__link:hover {
-      border-bottom: 4px solid #8bc34a;
+      border-bottom: 4px solid #d5012c;
     }
 
   .android-search-box {
@@ -161,7 +232,7 @@ a img{
 
   .android-drawer .mdl-layout-title {
     position: relative;
-    background: #6ab344;
+    background: #d5012c;
     height: 160px;
   }
 
@@ -333,7 +404,7 @@ a img{
 }
 
   .android-link:hover {
-    color: #7cb342 !important;
+    color: #d5012c !important;
   }
 
   .android-link .material-icons {
@@ -344,12 +415,12 @@ a img{
 
 .android-alt-link {
   text-decoration: none;
-  color: #64ffda !important;
+  color: #7e7d76 !important;
   font-size: 16px;
 }
 
   .android-alt-link:hover {
-    color: #00bfa5 !important;
+    color: #7e7d76 !important;
   }
 
   .android-alt-link .material-icons {
@@ -434,7 +505,7 @@ a img{
 }
 
   .android-footer a:hover {
-    color: #8bc34a;
+    color: #d5012c;
   }
 
   .android-footer .mdl-mega-footer--top-section::after {
